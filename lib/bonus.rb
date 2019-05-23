@@ -1,26 +1,7 @@
-def bonus
-  epic_tragedy[:montague][:patriarch][:name] = "Michael Jordan"
+describe "#bonus" do
+  it "uses the [] = method to change the hero and heronie's stats form alive to dead" do
+    expect(bonus[:montague][:hero][:status]).to eq("dead")
+    expect(bonus[:capulet][:heroine][:status]).to eq("dead")
+ end 
+ end 
  
-puts epic_tragedy
- 
-{
-   :montague => {
-      :patriarch => {name: "Michael Jordan", age: "53"},
-      :matriarch => {name: "Lady Montague", age: "54"},
-      :hero => {name: "Romeo", age: "15", status: "dead"},
-      :hero_friends => [
-        {name: "Benvolio", age: "17", attitude: "worried"},
-        {name: "Mercutio", age: "18", attitude: "hot-headed"}
-      ]
-   },
-   :capulet => {
-      :patriarch => {name: "Lord Capulet", age: "50"},
-      :matriarch => {name: "Lady Capulet", age: "51"},
-      :heroine => {name: "Juliet", age: "15", status: "dead"},
-      :heroine_friends => [
-        {name: "Steven", age: "30", attitude: "confused"},
-        {name: "Nurse", age: "44", attitude: "worried"}
-      ]
-   }
-}
-end
